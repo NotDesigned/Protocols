@@ -6,6 +6,7 @@
 
 ```text
 project/
+├── .gitignore             # Git 忽略规则
 ├── Docker/                # Docker 相关文件
 │   ├── Dockerfile         # 默认镜像
 │   └── Dockerfile.xxx     # 按需提供的功能变体
