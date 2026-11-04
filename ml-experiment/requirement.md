@@ -12,6 +12,7 @@ project/
 │   └── Dockerfile.xxx     # 按需提供的功能变体
 ├── pyproject.toml         # 项目配置与依赖定义
 ├── uv.lock                # 依赖锁文件
+├── assets/                # README 的图片等附件
 ├── configs/               # 实验配置
 ├── src/                   # 项目源码
 │   ├── models/            # 模型结构
