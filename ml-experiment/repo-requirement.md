@@ -100,6 +100,7 @@ uv run python src/evaluate.py --config <配置文件.yaml> [a.b=c ...]
 ### 评测
 
 - 评测入口为 `src/evaluate.py`，支持加载指定 checkpoint 独立评测。
+- 汇报格式，在W&B下记录的指标，最终要评测的，也要画出表格。例如比如比较泛化差距 留出NLL loss - 训练 NLL loss。就不要只在最终报告。即使是事后补充的，也画进W&B，作为逐（逐若干）step / epoch 来可视化报告。
 
 ### 文档要求
 
