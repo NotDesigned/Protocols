@@ -70,7 +70,7 @@ project/
 
 #### 指标记录
 
-- 指标按 `train/`、`val/`、`test/`、`optim/`、`perf/` 分组，同名指标保持相同含义、单位和统计口径。
+- 指标按 `train/`、`val/`、`test/`、`optim/`、`perf/`, `eval/` 分组，同名指标保持相同含义、单位和统计口径。
 - 默认记录训练损失、当前学习率及实际执行的验证／测试指标；其他指标按任务需要补充。
 - 训练指标每隔可配置的 N 步汇总记录，以 `global_step` 为横轴；其含义为优化器更新次数，梯度累积期间不增加。
 - `train/loss` 记录窗口平均损失；多 epoch 训练时，每 epoch 结束时另记录整轮平均损失 `train/loss_epoch`，以 `epoch` 为横轴，并附带当前 `global_step`。
