@@ -77,6 +77,14 @@ project/
 - 损失按对应的样本数或有效 token 数加权；评测指标按完整评测集合计算。分布式运行先正确汇总，再由主进程记录。
 - 算法、数据集、seed 和消融开关写入 `config`。
 
+分组	判断标准	指标
+train/	训练进程实时算，训练模式（有 dropout、MTP），当前 batch	train/loss、train/lm_loss、train/mtp_loss、train/num_iterations
+val/	训练脚本自己算的赛道成绩，能和榜单对比	val/loss、val/bpb、val/ema_*、val/ckpt_avg_*、val/logit_avg_*
+optim/	优化器和权重的状态	optim/weight_l2_norm、optim/lr_multiplier
+perf/	速度和资源	perf/mfu
+eval/	独立进程、冻结权重、评测模式、固定探针，不参与训练和选模
+
+
 ### 代码要求
 
 #### 配置与启动
