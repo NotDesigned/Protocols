@@ -2,6 +2,8 @@
 
 IMPORTANT: Agents 应当设定 Hooks，按本要求检查研究文档是否得到维护。
 
+研究文档、实验分析、论文、研究笔记和科研邮件统一遵循 [Scientific Writing & Editing Protocol](scientific-writing-protocol.md)。`log.md` 保留按时间追加的执行记录；讲解和结论按科学问题与证据链重新组织。
+
 实验代码遵循 `ml-experiment/repo-requirement.md`。研究文档通过 run id、W&B 链接引用实验，不复制实验内容。
 
 ### 目录结构
